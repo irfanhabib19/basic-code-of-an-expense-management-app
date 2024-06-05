@@ -1,0 +1,90 @@
+body {
+    font-family: 'Consolas', monospace;
+    background-color: #000;
+    color: #ff1493;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ff1493;
+    color: #000;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(255, 20, 147, 0.7);
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+h1, h2 {
+    margin: 0 0 20px 0;
+}
+
+.form-container, .budget-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ff1493;
+    border-radius: 4px;
+    font-family: 'Consolas', monospace;
+}
+
+button {
+    padding: 10px;
+    background-color: #000;
+    color: #ff1493;
+    border: 1px solid #ff1493;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Consolas', monospace;
+}
+
+button:hover {
+    background-color: #ff1493;
+    color: #000;
+}
+
+.expenses-container {
+    margin-bottom: 20px;
+}
+
+#expenses-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#expenses-list li {
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background-color: #fff;
+    color: #000;
+}
+
+#expenses-list li span {
+    cursor: pointer;
+    color: red;
+}
+
+.total-container {
+    font-size: 1.2em;
+}
+
+#budget-message {
+    color: red;
+    font-weight: bold;
+}
+
